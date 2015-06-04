@@ -1,0 +1,8 @@
+{
+	"camelcase": true,
+	"freeze": true,
+	"browser": true,
+	"node": true,
+	"jasmine": true,
+	"validthis": true
+}

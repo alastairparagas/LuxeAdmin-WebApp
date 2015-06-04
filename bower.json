@@ -1,0 +1,36 @@
+{
+  "name": "luxe-admin",
+  "version": "1.0.0",
+  "authors": [
+    "Alastair Paragas <alastairparagas@gmail.com>"
+  ],
+  "description": "Administration Front-End of Luxe Properties Property Site Generator",
+  "main": "index.html",
+  "keywords": [
+    "luxe",
+    "luxe-properties",
+    "real",
+    "estate",
+    "stela"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "resolutions": {
+    "angular": "~1.4.0"
+  },
+  "dependencies": {
+    "angular": "1.4.0",
+    "angular-ui-router": "0.2.15",
+    "oauth-ng": "0.4.0",
+    "bootstrap-sass": "3.3.4",
+    "jquery": "2.1.4",
+    "font-awesome": "4.3.0",
+    "flat-color-icons": "1.0.2"
+  }
+}
