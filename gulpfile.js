@@ -43,7 +43,7 @@
 			.pipe(concat('app.js'))
 			.pipe(uglify())
 			.pipe(sourcemaps.write())
-			.pipe(gulp.dest('./scripts'));
+			.pipe(gulp.dest('./scripts/dist'));
 	}
 	
 	gulp.task('scssCompile', scssCompile);
