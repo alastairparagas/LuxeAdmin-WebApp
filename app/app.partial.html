@@ -1,9 +1,11 @@
-<nav class="navbar navbar-default navbar-static-top" ng-if="app.isLoggedIn()">
+<nav class="navbar navbar-default navbar-static-top" ng-if="appController.isLoggedIn()">
 	
 	<div class="container">
 		
 		<div class="navbar-header">
-			<a class="navbar-brand" href="#">Luxe Properties</a>
+			<a class="navbar-brand" ui-sref="app.dashboard">
+				<img src="images/luxe_logo.png" alt="Luxe Properties LLC">
+			</a>
 			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapseMenu">
 				<span class="sr-only">Toggle navigation</span>
 				<span class="icon-bar"></span>
@@ -14,12 +16,22 @@
 
 		<div class="collapse navbar-collapse" id="collapseMenu">
 			<ul class="nav navbar-nav navbar-right">
-				<li><a ui-sref="app.user.manage">Manage Users</a></li>
+				<li>
+					<a ui-sref="app.create.summary">
+						<img src="bower_components/flat-color-icons/svg/plus.svg">
+					</a>
+				</li>
+				<li>
+					<a ui-sref="app.user.manage">
+						<img src="bower_components/flat-color-icons/svg/portrait_mode.svg">
+					</a>
+				</li>
 				<li class="dropdown">
 					<a class="dropdown-toggle" 
 					   data-toggle="dropdown" 
 					   role="button" 
-					   aria-expanded="false">{{appController.user.name}} 
+					   aria-expanded="false">
+						 <img src="bower_components/flat-color-icons/svg/settings.svg">
 						<span class="caret"></span>
 					</a>
 					<ul class="dropdown-menu" role="menu">

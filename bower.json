@@ -30,6 +30,7 @@
     "bootstrap-sass": "3.3.4",
     "jquery": "2.1.4",
     "font-awesome": "4.3.0",
-    "flat-color-icons": "1.0.2"
+    "flat-color-icons": "1.0.2",
+    "animate.css": "~3.3.0"
   }
 }

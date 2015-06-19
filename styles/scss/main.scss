@@ -1,7 +1,6 @@
+@import "variables/main.scss";
 @import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables";
 @import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
-
-@import "variables/main.scss";
 
 // Reset and dependencies
 @import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/normalize";
@@ -49,3 +48,5 @@
 // Utility classes
 @import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/utilities";
 @import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
+
+@import "cssMutations/main.scss";

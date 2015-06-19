@@ -1,11 +1,14 @@
-<div class="container">
-	<div class="row">
-		<div class="col-md-6 col-md-offset-3">
-			<div class="well well-lg">
+<div class="container-fluid" id="login">
+	<div class="container animated fadeInDown" id="login-box">
+		<div class="row" id="login-logo">
+			<img class="img-responsive" src="images/luxe_logo.png">
+		</div>
+		<div class="row" id="login-form">
+			<div class="col-md-6 col-md-offset-3">
 				<form class="form-horizontal" 
 					  ng-submit="loginController.login(
-								 	loginController.login.email, 
-								 	loginController.login.password)">
+								 loginController.login.email, 
+								 loginController.login.password)">
 					<div class="form-group">
 						<label for="emailInput">Email Address</label>
 						<input type="email" 

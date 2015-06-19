@@ -11,10 +11,11 @@
 	
 	function run($state, $timeout, AuthService) {
 		
+		AuthService.initialize();
+		
 		AuthService
 			.login()
 			.then(function loginSuccess() {
-				// State.go bug. Wrap in timeout call
 				$timeout(function() {
 					$state.go('app.dashboard');
 				});

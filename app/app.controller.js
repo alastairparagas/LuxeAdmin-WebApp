@@ -15,15 +15,15 @@
 		
 		$this.user = AuthService.getUser();
 		
-		$this.isLoggedIn = AuthService.isLoggedIn();
+		$this.isLoggedIn = function () {
+			return AuthService.isLoggedIn();
+		};
 		
 		$this.logout = function logout() {
 			AuthService
 				.logout()
 				.then(function logoutSuccess() {
-					if (!AuthService.isLoggedIn()) {
-						$state.go('app.login');	
-					}
+					$state.go('app.login');	
 				}, function logoutFailure(errorMessage) {
 					$this.message = errorMessage;
 				});
