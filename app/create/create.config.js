@@ -20,22 +20,22 @@
 				template: '<ui-view/>'
 			})
 			.state('app.create.summary', {
-				url: '/createSite/summary',
+				url: '/create/summary',
 				controller: 'CreateSummaryController',
-				controllerAs: 'createSummaryController',
-				templateUrl: 'app/createSite/createSummary.partial.html'
+				controllerAs: 'CreateSummaryController',
+				templateUrl: 'app/create/createSummary.partial.html'
 			})
 			.state('app.create.details', {
-				url: '/createSite/details',
+				url: '/create/details',
 				controller: 'CreateDetailsController',
-				controllerAs: 'createDetailsController',
-				templateUrl: 'app/createSite/createDetails.partial.html'
+				controllerAs: 'CreateDetailsController',
+				templateUrl: 'app/create/createDetails.partial.html'
 			})
 			.state('app.create.photos', {
-				url: '/createSite/photos',
+				url: '/create/photos',
 				controller: 'CreatePhotosController',
-				controllerAs: 'createPhotosController',
-				templateUrl: 'app/createSite/createPhotos.partial.html'
+				controllerAs: 'CreatePhotosController',
+				templateUrl: 'app/create/createPhotos.partial.html'
 			});
 		
 	}

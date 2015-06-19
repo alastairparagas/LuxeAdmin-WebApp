@@ -15,7 +15,7 @@
 			.state('app.login', {
 				url: '/login',
 				controller: 'LoginController',
-				controllerAs: 'loginController',
+				controllerAs: 'LoginController',
 				templateUrl: 'app/auth/login.partial.html'
 			});
 		

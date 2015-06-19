@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default navbar-static-top" ng-if="appController.isLoggedIn()">
+<nav class="navbar navbar-default navbar-static-top" ng-if="AppController.isLoggedIn()">
 	
 	<div class="container">
 		
@@ -22,7 +22,7 @@
 					</a>
 				</li>
 				<li>
-					<a ui-sref="app.user.manage">
+					<a ui-sref="app.profile.manage">
 						<img src="bower_components/flat-color-icons/svg/portrait_mode.svg">
 					</a>
 				</li>
@@ -36,11 +36,11 @@
 					</a>
 					<ul class="dropdown-menu" role="menu">
 						<li>
-							<a ui-sref="app.user.editProfile(appController.user.id)">
+							<a ui-sref="app.profile.edit({id: AppController.user.id})">
 								Edit Profile
 							</a>
 						</li>
-						<li><a ng-click="appController.logout()">Logout</a></li>
+						<li><a ng-click="AppController.logout()">Logout</a></li>
 					</ul>
 				</li>
 			</ul>

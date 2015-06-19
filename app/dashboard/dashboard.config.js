@@ -15,7 +15,7 @@
 			.state('app.dashboard', {
 				url: '/dashboard',
 				controller: 'DashboardController',
-				controllerAs: 'dashboardController',
+				controllerAs: 'DashboardController',
 				templateUrl: 'app/dashboard/dashboard.partial.html'
 			});
 		

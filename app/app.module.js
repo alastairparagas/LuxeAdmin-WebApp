@@ -5,6 +5,7 @@
 	
 	angular
 		.module('luxeSiteGenerator', ['ui.router',
+									  'luxeSiteGenerator.profile',
 									  'luxeSiteGenerator.api',
 									  'luxeSiteGenerator.auth',
 									  'luxeSiteGenerator.dashboard',

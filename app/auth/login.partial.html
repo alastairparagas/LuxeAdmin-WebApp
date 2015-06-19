@@ -5,17 +5,16 @@
 		</div>
 		<div class="row" id="login-form">
 			<div class="col-md-6 col-md-offset-3">
-				<form class="form-horizontal" 
-					  ng-submit="loginController.login(
-								 loginController.login.email, 
-								 loginController.login.password)">
+				<form ng-submit="LoginController.login(
+								 LoginController.login.email, 
+								 LoginController.login.password)">
 					<div class="form-group">
 						<label for="emailInput">Email Address</label>
 						<input type="email" 
 							   class="form-control" 
 							   id="emailInput"
 							   placeholder="Your email address"
-							   ng-model="loginController.login.email">
+							   ng-model="LoginController.login.email">
 					</div>
 					<div class="form-group">
 						<label for="passwordInput">Password</label>
@@ -23,7 +22,7 @@
 							   class="form-control"
 							   id="passwordInput"
 							   placeholder="Password"
-							   ng-model="loginController.login.password">
+							   ng-model="LoginController.login.password">
 					</div>
 					<div class="form-group">
 						<button type="submit" class="btn btn-success">Sign In</button>

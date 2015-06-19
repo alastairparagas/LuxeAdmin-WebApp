@@ -18,7 +18,7 @@
 				url: '',
 				abstract: true,
 				controller: 'AppController',
-				controllerAs: 'appController',
+				controllerAs: 'AppController',
 				templateUrl: 'app/app.partial.html'
 			});
 		
