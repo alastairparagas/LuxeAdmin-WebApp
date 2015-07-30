@@ -86,9 +86,9 @@
 						id: "1",
 						clientToken: "",
 						email: "alastairparagas@gmail.com",
-						permissions: ['publish', 
-									  'create', 
-									  'administrate_users']
+						permissions: ['site_publish', 
+									  'site_create', 
+									  'users_manage']
 					};
 
 					$window

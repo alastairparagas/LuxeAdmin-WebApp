@@ -17,7 +17,9 @@
 			.login()
 			.then(function loginSuccess() {
 				$timeout(function() {
-					$state.go('app.dashboard');
+					if ($state.is('app.login')) {
+						$state.go('app.dashboard');
+					}
 				});
 			});
 		
