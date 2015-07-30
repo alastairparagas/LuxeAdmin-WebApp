@@ -27,6 +27,12 @@
 				url: '/create/details',
 				templateUrl: 'app/create/createDetails.partial.html'
 			})
+			.state('app.dashboard', {
+				url: '/dashboard',
+				controller: 'DashboardController',
+				controllerAs: 'DashboardController',
+				templateUrl: 'app/dashboard/dashboard.partial.html'
+			})
 			.state('app.create.photos', {
 				url: '/create/photos',
 				templateUrl: 'app/create/createPhotos.partial.html'
