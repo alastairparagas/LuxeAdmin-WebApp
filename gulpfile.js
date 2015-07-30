@@ -57,6 +57,8 @@
 	gulp.task('jsMinify', jsMinify);
 	
 	gulp.task('dev', function () {
+		scssCompile();
+		jsMinify();
 		watch('./styles/scss/**/*.scss', scssCompile);
 		watch('./app/**/*.js', jsMinify);
 	});
