@@ -23,7 +23,6 @@
 			});
 		
 		$urlRouterProvider.otherwise('/login');
-		
 		$compileProvider.debugInfoEnabled(true);
 		
 	}
